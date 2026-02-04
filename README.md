@@ -1,21 +1,23 @@
-# Kombucha Production Process
+# Kombucha Production 1000L/ngày
 
 <img src="https://images.unsplash.com/photo-1623418663518-6b009d3e9488?w=400" width="120">
 
-**14 bước sản xuất trà Kombucha công nghiệp**
+## 📋 12 BƯỚC SẢN XUẤT
 
-## Flowchart
 
-```mermaid
-graph TD
-    A[Tea] --> B[Extract]
-    B --> C[Filter]
-    C --> D[Syrup]
-    D --> E[pH42]
-    E --> F[Ferment]
-    F --> G[Filter2]
-    G --> H[Flavor]
-    H --> I[Can]
-    I --> J[Pasteurize]
-    J --> K[Check]
-    K --> L[Done]
+## ⚙️ THÔNG SỐ QUAN TRỌNG
+
+
+## 🐍 CHECKER PYTHON
+
+Tạo file `check.py`:
+```python
+def check_kombucha(ph, temp):
+    if ph <= 4.2 and 28 <= temp <= 32:
+        return "✅ SẴN SÀNG LÊN MEN"
+    return "❌ Cần chỉnh pH/nhiệt độ"
+
+print(check_kombucha(4.0, 30))  # ✅ SẴN SÀNG
+git add README.md check.py
+git commit -m "Kombucha production"
+git push
